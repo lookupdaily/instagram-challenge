@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= @post.picture %>
-</p>
-
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+<div>
+  <div>
+    <%= image_tag(@post.picture_url, width: '100%') if @post.picture.present? %>
+  </div>
+  <div>
+    <%= @post.description %>
+  </div>
+</div>
+
+
