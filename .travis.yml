@@ -7,11 +7,9 @@ before_script:
 - bundle exec rails db:create
 - bundle exec rails db:migrate
 script:
-- bundle
+- bundle config set deployment 'true'
 - bundle exec rspec
 - bundle exec rubocop
 branches:
   only:
   - master
-after_script:
-- ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
