@@ -26,6 +26,7 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
     - 'vendor/**/*'
+    - 'node_modules/**/*'
 
 #    _____               ____ ____        __     _         __
 #   / ___/ _____ ____ _ / __// __/____   / /    (_)____   / /_
@@ -229,8 +230,6 @@ Style/BeginBlock:
 Style/BlockComments:
   Enabled: false
 Style/BlockDelimiters:
-  Enabled: false
-Style/BracesAroundHashParameters:
   Enabled: false
 Style/CaseEquality:
   Enabled: false
