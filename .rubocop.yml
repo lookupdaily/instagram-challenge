@@ -84,6 +84,7 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+    - 'app/controllers/post_controller.rb'
 
 # Code Style
 # ==========

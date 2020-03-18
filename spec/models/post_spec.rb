@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  pending "it requires a name to be created"
+  pending "it requires a description to be created"
+  pending "it can be created without a picture"
 end
