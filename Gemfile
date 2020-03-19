@@ -7,6 +7,7 @@ ruby '2.6.3'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'bootstrap-sass'
 # Create a picture uploader
 gem 'carrierwave'
 # Adding user authentification with Devise

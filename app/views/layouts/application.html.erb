@@ -4,18 +4,39 @@
     <title>InstagramChallenge</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <nav class="navbar border-bottom border-secondary p-4">
+    <div class="nav">
+      <a class="navbar-brand text-dark pb-1" href="/">Daily</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <%= link_to '+', new_post_path, class: 'nav-link btn-outline-dark btn-lg rounded-circle'  %>
+        </li>
+      </ul>
+   </div>
+   <div>
+   <ul class="nav justify-content-end">
+   <li class="nav-item">
+    me
+    </li>
+    </ul>
+   </div>
+
+  </nav>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <%= yield %>
+    <div class="container mt-5">
+      <%= yield %>
+    </div>
   </body>
 </html>

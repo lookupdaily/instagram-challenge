@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+ h1, {
+  font-family: 'Noto Serif', serif;
+ }
+
+.navbar-brand {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.6rem;
+ }
+
+ .card-body img {
+   object-fit: cover
+ }
+

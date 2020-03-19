@@ -10,18 +10,21 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="form-group">
+    <label class="btn btn-outline-dark">
+      Upload image
+      <span style="display:none;">
+        <%= form.file_field :picture %>
+      </span>
+    </label>
   </div>
 
-  <div class="field">
-    <%= form.label :picture %>
-    <%= form.file_field :picture %>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <%= form.text_area :description, class: 'form-control'%>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  
+
+  <button type="submit" class="btn btn-block btn-lg btn-warning mb-5">Submit</button>
 <% end %>
